@@ -37,7 +37,7 @@ func get(url string, token string) (resp *http.Response, err error) {
 func main() {
 	if len(os.Args) < 2 {
 		fmt.Println("ERRROR: bitbucket token missed")
-		fmt.Printf("Usage: %v --token <token>\n", os.Args[0])
+		fmt.Printf("Usage: %v <token>\n", os.Args[0])
 		os.Exit(1)
 	}
 
